@@ -24,7 +24,7 @@ If you find any problem in use, pleace contact `yang at nii.ac.jp`.
 - Set `max_freq_num` for Fourier series, it represents the highest number of coefficients in frequency domain you want.
 - Set `frame_desc_dim` to `1024` by default.
 - Set `short_list_length`, `far_list_length` for query expansion, they stand for the number of videos in short/far list.
-- Set `epsilon` for query expansion, the unit is frame. It's a parameter for consistency check, we set it as `50` by default.
+- Set `epsilon` for query expansion, the unit is frame. It's a parameter for consistency check, we set it to `10` for `5fps` and `50` for `15fps`.
 - Set `periods` as adjacent numbers taken from the Fibonacci sequence, according to our paper.
 
 # Frame Extraction

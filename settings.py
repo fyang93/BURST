@@ -28,7 +28,7 @@ combine_result_path = '{0}/result.dat'.format(result_dir)
 # parameters for query expansion
 short_list_length = 10
 far_list_length = 2000
-epsilon = 50
+epsilon = 10
 
 
 # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377,
