@@ -149,10 +149,10 @@ for evname in sorted(events):
   nq = len(queries)           # expected nb of queries
   res = results[evname]       # APs for this event
   nr = len(res)
-  # if nr < nq:
-  #   print ("missing %d/%d queries" % (nq - nr, nq))
-  #   n_ap = None               # refuse to compute overall mAP
-  #   continue
+  if nr < nq:
+    print ("missing %d/%d queries" % (nq - nr, nq))
+    n_ap = None               # refuse to compute overall mAP
+    continue
   mAP = sum(res) / nq
   print ("mAP = %.4f" % mAP)
   if n_ap != None:
